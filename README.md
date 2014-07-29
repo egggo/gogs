@@ -12,6 +12,16 @@ Gogs(Go Git Service) is a Self Hosted Git Service in the Go Programming Language
 - Due to testing purpose, data of [try.gogits.org](http://try.gogits.org) has been reset in **June 21, 2014** and will reset multiple times after. Please do **NOT** put your important data on the site.
 - Demo site [try.gogits.org](http://try.gogits.org) is running under `dev` branch.
 
+- Fork版本增加了centos下开机启动脚本
+
+````
+cp gogs.init /etc/init.d/gogs
+chkconfig --add gogs
+chkconfig gogs on
+
+service gogs start
+````
+
 #### Other language version
 
 - [简体中文](README_ZH.md)
